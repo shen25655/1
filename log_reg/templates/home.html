@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+    <p>您好：{{ user.reg_mail }}</p>
+
+    <form action="/logout/" method="post">
+        {% csrf_token %}
+        <button type="submit" class="logout-btn">退出登录</button>
+    </form>
+</body>
+</html>
